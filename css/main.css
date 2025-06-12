@@ -74,12 +74,12 @@ header {
 }
 
 body.claro section{
-  color: whitesmoke;
+  color: black;
   margin: 50px auto;
   padding: 30px;
   border-radius: 10px;
-  background-color: #323232;
-  box-shadow: 0 0px 5px rgba(0, 255, 13, 0.918);
+  background-color: rgb(173, 173, 173);
+  box-shadow: 0 0px 5px rgb(1, 37, 240);
 
 }
 
@@ -102,7 +102,19 @@ footer {
   padding: 5px;
   border-radius: 10px;
   background-color: #252525;
-  box-shadow: 0 -2px 5px rgba(0, 255, 13, 0.918);
+  box-shadow: 0 -3px 5px rgba(0, 255, 13, 0.918);
+
+  
+}
+
+body.claro footer {
+  text-align: center;
+  color:black ; 
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(173, 173, 173);
+  box-shadow: 0 -3px 5px rgb(1, 37, 240); ;
+  
 
   
 }
