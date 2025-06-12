@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #252525;
-  font-size: 16px;
 }
 body.claro{
   background-color: whitesmoke;
@@ -66,13 +65,10 @@ body.claro header {
 }
 header {
   color: whitesmoke;
-  max-width: 800px;
-  margin: 30px auto;
-  background-color: #363636;
+  background-color: #323232;
   padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 8px 10px rgba(55, 255, 5, 0.267);
-}
+  
+   }
 
 body.claro section{
   color: black;
@@ -80,7 +76,7 @@ body.claro section{
   padding: 30px;
   border-radius: 10px;
   background-color: rgb(173, 173, 173);
-  box-shadow: 0 0px 5px rgb(1, 37, 240);
+  box-shadow: 0 0px px rgb(1, 37, 240);
 
 }
 
@@ -118,16 +114,4 @@ body.claro footer {
   
 
   
-}
-
-
-#botao-acessibilidade {
-  font-size: 16px;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  border: none;
-  background-color: #333;
-  color: white;
-  border-radius: 5px;
 }

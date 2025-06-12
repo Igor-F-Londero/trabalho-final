@@ -4,18 +4,39 @@ body {
   padding: 0;
   background-color: #252525;
 }
-
+body.claro{
+  background-color: whitesmoke;
+  color: black;
+}
+body.claro nav{
+  background-color: #0509fc;
+  padding: 15px;
+  text-align: center
+}
 nav {
   background-color: #323232;
   padding: 15px;
   text-align: center;
   position: sticky;
   top: 0;
-  border: solid #252525; ;
-   
 }
 
-.botoes-topo button {
+body.claro  button {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 5px white;
+  margin: 4px;
+}
+
+ button {
   background-color: #363636;
   color: whitesmoke;
   border: none;
@@ -30,11 +51,18 @@ nav {
   margin: 4px;
 }
 
-.botoes-topo button:hover {
-  background-color: #555;
-}
 
-main {
+body.claro header {
+  color: black;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: rgb(173, 173, 173);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgb(1, 37, 240);
+ 
+}
+header {
   color: whitesmoke;
   max-width: 800px;
   margin: 30px auto;
@@ -44,6 +72,16 @@ main {
   box-shadow: 0 8px 10px rgba(55, 255, 5, 0.267);
 }
 
+body.claro section{
+  color: black;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(173, 173, 173);
+  box-shadow: 0 0px 5px rgb(1, 37, 240);
+
+}
+
 section{
   color: whitesmoke;
   margin: 50px auto;
@@ -51,9 +89,7 @@ section{
   border-radius: 10px;
   background-color: #323232;
   box-shadow: 0 0px 5px rgba(0, 255, 13, 0.918);
-
-}
-
+ }
 ul {
   padding-left: 20px;
 }
@@ -65,7 +101,19 @@ footer {
   padding: 5px;
   border-radius: 10px;
   background-color: #252525;
-  box-shadow: 0 -2px 5px rgba(0, 255, 13, 0.918);
+  box-shadow: 0 -3px 5px rgba(0, 255, 13, 0.918);
+
+  
+}
+
+body.claro footer {
+  text-align: center;
+  color:black ; 
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(173, 173, 173);
+  box-shadow: 0 -3px 5px rgb(1, 37, 240); ;
+  
 
   
 }
