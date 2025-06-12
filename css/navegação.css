@@ -64,25 +64,24 @@ body.claro header {
 }
 header {
   color: whitesmoke;
-  max-width: 800px;
-  margin: 30px auto;
-  background-color: #363636;
+  background-color: #323232;
   padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 8px 10px rgba(55, 255, 5, 0.267);
-}
+  text-align: center;
+  border: solid gray;
+  
+   }
 
-body.claro section{
+body.claro main{
   color: black;
   margin: 50px auto;
   padding: 30px;
   border-radius: 10px;
   background-color: rgb(173, 173, 173);
-  box-shadow: 0 0px 5px rgb(1, 37, 240);
+  box-shadow: 0 0px px rgb(1, 37, 240);
 
 }
 
-section{
+main{
   color: whitesmoke;
   margin: 50px auto;
   padding: 30px;
