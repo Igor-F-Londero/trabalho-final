@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #252525;
+  font-size: 16px;
 }
 body.claro{
   background-color: whitesmoke;
@@ -117,4 +118,16 @@ body.claro footer {
   
 
   
+}
+
+
+#botao-acessibilidade {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
 }
