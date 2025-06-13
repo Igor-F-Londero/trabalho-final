@@ -69,6 +69,7 @@ header {
   background-color: #323232;
   padding: 20px 30px;
   text-align: center;
+<<<<<<< HEAD
    }
 
 h1 {
@@ -76,6 +77,9 @@ h1 {
   text-align: center;
   justify-content: center;
   align-items: center;
+=======
+  border: solid gray;
+>>>>>>> 7cc9d4fe81cd451b99ea689cdac04a89377c6368
   
 
 
