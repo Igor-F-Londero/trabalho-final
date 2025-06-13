@@ -64,10 +64,21 @@ body.claro header {
  
 }
 header {
+  display: center;
   color: whitesmoke;
   background-color: #323232;
   padding: 20px 30px;
+  text-align: center;
+   }
+
+h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   
+
+
    }
 
 body.claro section{
@@ -100,6 +111,10 @@ footer {
   border-radius: 10px;
   background-color: #252525;
   box-shadow: 0 -3px 5px rgba(0, 255, 13, 0.918);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
 
   
 }
