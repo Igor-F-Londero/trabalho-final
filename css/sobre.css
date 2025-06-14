@@ -4,16 +4,18 @@ body {
   padding: 0;
   background-color: #252525;
 }
-body.claro{
+
+body.claro {
   background-color: whitesmoke;
   color: black;
 }
-body.claro nav{
-  
+
+body.claro nav {
   background-color: #0509fc;
   padding: 15px;
-  text-align: center
+  text-align: center;
 }
+
 nav {
   background-color: #323232;
   padding: 15px;
@@ -22,7 +24,7 @@ nav {
   top: 0;
 }
 
-body.claro  button {
+body.claro button {
   background-color: whitesmoke;
   color: black;
   border: none;
@@ -37,7 +39,7 @@ body.claro  button {
   margin: 4px;
 }
 
- button {
+button {
   background-color: #363636;
   color: whitesmoke;
   border: none;
@@ -52,14 +54,13 @@ body.claro  button {
   margin: 4px;
 }
 
-
 body.claro header {
   color: black;
   background-color: rgb(173, 173, 173);
-  border-radius: px;
-  border-color:  rgb(1, 37, 240);
- 
+  border-radius: 0;
+  border-color: rgb(1, 37, 240);
 }
+
 header {
   display: center;
   color: whitesmoke;
@@ -67,29 +68,30 @@ header {
   padding: 20px 30px;
   text-align: center;
   border: solid;
-  border-color: rgba(3, 126, 9, 0.705);;
+  border-color: rgba(3, 126, 9, 0.705);
+  position: relative; /* para posicionar os botões no header */
+}
 
+/* Botões no canto superior direito do header */
+.acessibilidade-tema {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
 
-   }
+.acessibilidade-tema button {
+  margin: 0;
+}
 
-
-body.claro h1 {
+body.claro h1,
+h1 {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-   }
-
-
-   
-   h1 {
-    
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-   }
-
+}
 
 .fascinate-regular {
   font-family: "Fascinate", system-ui;
@@ -97,33 +99,28 @@ body.claro h1 {
   font-style: normal;
 }
 
-
-
-body.claro section{
+body.claro section {
   color: black;
   margin: 50px auto;
   padding: 30px;
   border-radius: 10px;
   background-color: rgb(173, 173, 173);
   box-shadow: 0 0px 5px rgb(1, 37, 240);
-
 }
 
-section{
+section {
   color: whitesmoke;
   margin: 50px auto;
   padding: 30px;
   border-radius: 10px;
   background-color: #323232;
   box-shadow: 0 0px 5px rgba(0, 255, 13, 0.918);
- }
-body.claro ul {
-  padding-left: 20px;
-}
- ul {
-  padding-left: 20px;
 }
 
+body.claro ul,
+ul {
+  padding-left: 20px;
+}
 
 footer {
   text-align: center;
@@ -136,18 +133,112 @@ footer {
   position: fixed;
   width: 100%;
   left: 0;
-
-  
 }
 
 body.claro footer {
   text-align: center;
-  color:black ; 
+  color: black;
   padding: 5px;
   border-radius: 10px;
   background-color: rgb(173, 173, 173);
-  box-shadow: 0 -3px 5px rgb(1, 37, 240); ;
-  
+  box-shadow: 0 -3px 5px rgb(1, 37, 240);
+}
 
+/* Estilos da área de contato */
+
+.contato {
+  background-color: #323232;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 13, 0.85);
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+
+body.claro .contato {
+  background-color: rgb(173, 173, 173);
+  color: black;
+  box-shadow: 0 0 10px rgb(1, 37, 240);
+}
+
+form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  max-width: 480px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 22px;
+  resize: vertical;
+  font-size: 1.1rem;
+}
+
+form textarea {
+  min-height: 150px;
+}
+
+form button[type="submit"] {
+  background-color: #363636;
+  color: whitesmoke;
+  border: none;
+  padding: 14px 30px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 7px rgba(0, 255, 13, 0.9);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #00ff0d;
+  color: #222;
+}
+
+body.claro form button[type="submit"] {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body.claro form button[type="submit"]:hover {
+  background-color: #d1d1d1;
+  color: #0509fc;
   
 }
+
+/* Efeito nas imagens de perfil  */
+img {
+  border-radius: 15px;
+  border: 3px solid rgba(0, 255, 13, 0.7);
+  box-shadow: 0 0 15px rgba(0, 255, 13, 0.9), 
+              0 0 25px rgba(0, 255, 13, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 13, 1),
+              0 0 35px rgba(0, 255, 13, 0.9);
+}
+
+
+body.claro img {
+  border: 3px solid rgb(1, 37, 240);
+  box-shadow: 0 0 15px rgb(1, 37, 240),
+              0 0 25px rgba(1, 37, 240, 0.6);
+}
+
+body.claro img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgb(1, 37, 240),
+              0 0 35px rgba(1, 37, 240, 0.9);
+}
+
