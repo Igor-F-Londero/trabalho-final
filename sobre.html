@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Segurança Digital</title>
-  <link href="css/sobre.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Segurança Digital</title>
+  <link href="css/sobre.css" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Sobre</h1>
-    <p class="fascinate-regular">Apresentação dos integrantes do grupo</p>
+    <div class="header-left">
+      <h1>🙋‍♂️ Sobre</h1>
+      <p class="descricao">Apresentação dos integrantes do grupo</p>
+    </div>
+    <div class="header-right acessibilidade-tema">
+      <button id="alternarTema" aria-label="Mudar tema da página">Mudar Tema</button>
+      <button id="botao-acessibilidade" aria-label="Ativar acessibilidade">Acessibilidade</button>
+    </div>
+  </header>
 
-    <!-- Container dos botões no canto direito do header -->
-   <div class="acessibilidade-tema">
-  <button id="alternarTema">Mudar Tema</button>
-  <button id="botao-acessibilidade">accessibility</button>
-</div>
-
-  </header> 
-
-  <nav>
-    <button onclick="location.href='index.html'">Início</button>
-    <button onclick="location.href='sobre.html'">Sobre</button>
-    <button onclick="location.href='navegacao.html'">Navegação</button>
-    <button onclick="location.href='senha.html'">Senhas Fortes</button>
-    <button onclick="location.href='email.html'">E-mail</button>
-    <button onclick="location.href='downloads.html'">Downloads</button>
+  <nav class="botoes-topo" aria-label="Menu principal">
+    <button onclick="location.href='index.html'">Início 🏠</button>
+    <button onclick="location.href='sobre.html'">Sobre 🙋‍♂️</button>
+    <button onclick="location.href='navegacao.html'">Navegação 🌐</button>
+    <button onclick="location.href='senha.html'">Senhas Fortes 🔑</button>
+    <button onclick="location.href='email.html'">E-mail 📧</button>
+    <button onclick="location.href='downloads.html'">Downloads ⬇️</button>
   </nav>
 
-  <section>
-    <img src="IMG/perfil-igor.jpg" width="150px" alt="Img-igor"> 
-    <p class="fascinate-regular">Meu nome é Igor Gabriel Folle Londero, tenho 22 anos de idade, estou cursando Análise e Desenvolvimento de sistemas na Universidade de Passo Fundo(UPF).</p>
-  </section>
+  <main>
+    <section class="integrante">
+      <img src="IMG/perfil-igor.jpg" alt="Foto de Igor Gabriel Folle Londero" />
+      <p>
+        Meu nome é <strong>Igor Gabriel Folle Londero</strong>, tenho 22 anos e estou cursando Análise e Desenvolvimento de Sistemas na UPF. 🚀
+      </p>
+    </section>
 
-  <section>
-    <img src="IMG/perfil-guilherme.jpeg" width="150px" alt="Img-igor"> 
-    <p class="fascinate-regular">Meu nome é Guilherme de Oliveira Cruz, tenho 19 anos de idade, estou cursando Análise e Desenvolvimento de sistemas na Universidade de Passo Fundo(UPF) e adoro programar (ou pelomenos tentar) :)</p>
-  </section>
+    <section class="integrante">
+      <img src="IMG/perfil-guilherme.jpeg" alt="Foto de Guilherme de Oliveira Cruz" />
+      <p>
+        Meu nome é <strong>Guilherme de Oliveira Cruz</strong>, tenho 19 anos, também curso Análise e Desenvolvimento de Sistemas na UPF e adoro programar (ou pelo menos tento! 😅).
+      </p>
+    </section>
 
-  <section>
-    <h3>Entre em contato</h3>
-    <form>
-      <label for="Nome">Nome:</label>
-      <input id="Nome" type="text" name="nome"> 
-      <br><br>
-      <textarea name="mensagem" rows="10" cols="30">Digite aqui sua mensagem...</textarea>
-      <br><br>
-      <button type="submit" onclick="alert('Aviso: Página em construção')">ENVIAR</button>
-    </form>
-  </section>
+    <section class="contato">
+      <h2>📬 Entre em contato</h2>
+      <form onsubmit="alert('Aviso: Página em construção'); return false;">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" name="nome" placeholder="Seu nome completo" required />
+        </div>
 
-  <br><br><br>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite aqui sua mensagem..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar 📩</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>❗ Sua segurança digital começa com conhecimento.</p>

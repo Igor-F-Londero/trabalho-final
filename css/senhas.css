@@ -68,10 +68,10 @@ header {
   text-align: center;
   border: solid;
   border-color: rgba(3, 126, 9, 0.705);
-  position: relative; /* para posicionar os botões no header */
+  position: relative; 
 }
 
-/* Botões no canto superior direito do header */
+
 .acessibilidade-tema {
   position: absolute;
   top: 15px;
@@ -84,13 +84,7 @@ header {
   margin: 0;
 }
 
-body.claro h1,
-h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
+
 
 body.claro section {
   color: black;
@@ -140,11 +134,22 @@ body.claro footer {
   box-shadow: 0 -3px 5px rgb(1, 37, 240);
 }
 
-/* Container dos botões no canto superior direito do header */
+/* botões do canto do header */
 .header-buttons {
   position: absolute;
   top: 20px;
   right: 30px;
   display: flex;
   gap: 8px;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
 }

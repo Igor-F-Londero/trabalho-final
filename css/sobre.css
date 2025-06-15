@@ -1,3 +1,5 @@
+/* === ESTILOS GERAIS === */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -10,11 +12,7 @@ body.claro {
   color: black;
 }
 
-body.claro nav {
-  background-color: #0509fc;
-  padding: 15px;
-  text-align: center;
-}
+
 
 nav {
   background-color: #323232;
@@ -24,20 +22,11 @@ nav {
   top: 0;
 }
 
-body.claro button {
-  background-color: whitesmoke;
-  color: black;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Share Tech Mono', monospace;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  box-shadow: 0 2px 5px white;
-  margin: 4px;
+body.claro nav {
+  background-color: #0509fc;
 }
+
+
 
 button {
   background-color: #363636;
@@ -54,25 +43,32 @@ button {
   margin: 4px;
 }
 
-body.claro header {
+body.claro button {
+  background-color: whitesmoke;
   color: black;
-  background-color: rgb(173, 173, 173);
-  border-radius: 0;
-  border-color: rgb(1, 37, 240);
+  box-shadow: 0 2px 5px white;
 }
 
+
+
 header {
-  display: center;
   color: whitesmoke;
   background-color: #323232;
   padding: 20px 30px;
   text-align: center;
   border: solid;
   border-color: rgba(3, 126, 9, 0.705);
-  position: relative; /* para posicionar os botões no header */
+  position: relative;
 }
 
-/* Botões no canto superior direito do header */
+body.claro header {
+  background-color: rgb(173, 173, 173);
+  color: black;
+  border-color: rgb(1, 37, 240);
+}
+
+/* BOTÕES NO HEADER CANTO DIREITO */
+
 .acessibilidade-tema {
   position: absolute;
   top: 15px;
@@ -85,28 +81,6 @@ header {
   margin: 0;
 }
 
-body.claro h1,
-h1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.fascinate-regular {
-  font-family: "Fascinate", system-ui;
-  font-weight: 800;
-  font-style: normal;
-}
-
-body.claro section {
-  color: black;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 10px;
-  background-color: rgb(173, 173, 173);
-  box-shadow: 0 0px 5px rgb(1, 37, 240);
-}
 
 section {
   color: whitesmoke;
@@ -117,10 +91,19 @@ section {
   box-shadow: 0 0px 5px rgba(0, 255, 13, 0.918);
 }
 
-body.claro ul,
+body.claro section {
+  background-color: rgb(173, 173, 173);
+  color: black;
+  box-shadow: 0 0px 5px rgb(1, 37, 240);
+}
+
+
+
 ul {
   padding-left: 20px;
 }
+
+
 
 footer {
   text-align: center;
@@ -129,92 +112,20 @@ footer {
   border-radius: 10px;
   background-color: #252525;
   box-shadow: 0 -3px 5px rgba(0, 255, 13, 0.918);
-  bottom: 0;
   position: fixed;
+  bottom: 0;
   width: 100%;
   left: 0;
 }
 
 body.claro footer {
-  text-align: center;
-  color: black;
-  padding: 5px;
-  border-radius: 10px;
   background-color: rgb(173, 173, 173);
+  color: black;
   box-shadow: 0 -3px 5px rgb(1, 37, 240);
 }
 
-/* Estilos da área de contato */
 
-.contato {
-  background-color: #323232;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 255, 13, 0.85);
-  color: whitesmoke;
-  margin-bottom: 50px;
-}
 
-body.claro .contato {
-  background-color: rgb(173, 173, 173);
-  color: black;
-  box-shadow: 0 0 10px rgb(1, 37, 240);
-}
-
-form label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-}
-
-form input[type="text"],
-form textarea {
-  width: 100%;
-  max-width: 480px;
-  padding: 12px 15px;
-  border-radius: 8px;
-  border: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 22px;
-  resize: vertical;
-  font-size: 1.1rem;
-}
-
-form textarea {
-  min-height: 150px;
-}
-
-form button[type="submit"] {
-  background-color: #363636;
-  color: whitesmoke;
-  border: none;
-  padding: 14px 30px;
-  font-family: 'Share Tech Mono', monospace;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 7px rgba(0, 255, 13, 0.9);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
-  background-color: #00ff0d;
-  color: #222;
-}
-
-body.claro form button[type="submit"] {
-  background-color: whitesmoke;
-  color: black;
-}
-
-body.claro form button[type="submit"]:hover {
-  background-color: #d1d1d1;
-  color: #0509fc;
-  
-}
-
-/* Efeito nas imagens de perfil  */
 img {
   border-radius: 15px;
   border: 3px solid rgba(0, 255, 13, 0.7);
@@ -229,7 +140,6 @@ img:hover {
               0 0 35px rgba(0, 255, 13, 0.9);
 }
 
-
 body.claro img {
   border: 3px solid rgb(1, 37, 240);
   box-shadow: 0 0 15px rgb(1, 37, 240),
@@ -242,3 +152,140 @@ body.claro img:hover {
               0 0 35px rgba(1, 37, 240, 0.9);
 }
 
+
+
+section h1,
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* MAIN E INTEGRANTES */
+
+main {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+main .integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+}
+
+main .integrante img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #252525;
+  border: 3px solid rgba(0, 255, 13, 0.7);
+  box-shadow: 0 0 15px rgba(0, 255, 13, 0.9), 
+              0 0 25px rgba(0, 255, 13, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+main .integrante img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 13, 1),
+              0 0 35px rgba(0, 255, 13, 0.9);
+}
+
+main .integrante p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 400px;
+  text-align: center;
+}
+
+/*FORMULÁRIO */
+
+main section:last-of-type {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #323232;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 13, 0.85);
+  color: whitesmoke;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+body.claro main section:last-of-type {
+  background-color: rgb(173, 173, 173);
+  color: black;
+  box-shadow: 0 0 10px rgb(1, 37, 240);
+}
+
+main section:last-of-type h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main section:last-of-type form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+main section:last-of-type form label {
+  align-self: flex-start;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+main section:last-of-type form input[type="text"],
+main section:last-of-type form textarea {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: vertical;
+  font-size: 1.1rem;
+}
+
+main section:last-of-type form textarea {
+  min-height: 150px;
+}
+
+main section:last-of-type form button {
+  background-color: #363636;
+  color: whitesmoke;
+  border: none;
+  padding: 14px 30px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 7px rgba(0, 255, 13, 0.9);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: center;
+}
+
+main section:last-of-type form button:hover {
+  background-color: #00ff0d;
+  color: #222;
+}
+
+body.claro main section:last-of-type form button {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body.claro main section:last-of-type form button:hover {
+  background-color: #d1d1d1;
+  color: #0509fc;
+}
